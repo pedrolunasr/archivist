@@ -1,26 +1,15 @@
 [
-     {
+
+  {
     "id": 1,
     "title": "001",
-    "description": "Police report recovered in Arkham.",
-    "file": "archives/police-report.pdf"
-  },
-  {
-    "id": 2,
-    "title": "002",
-    "description": "A mysterious letter.",
-    "file": "archives/mysterious-letter.pdf"
+    "description": "Arkham Police Department - Incident Report",
+    "file": "archives/001.html"
   },
    {
-    "id": 1,
-    "title": "001",
-    "description": "Police report recovered in Arkham.",
-    "file": "archives/police-report.pdf"
-  },
-  {
     "id": 2,
     "title": "002",
-    "description": "A mysterious letter.",
-    "file": "archives/mysterious-letter.pdf"
+    "description": "Arkham police creature report",
+    "file": "archives/002.html"
   }
 ]

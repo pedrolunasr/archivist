@@ -1,0 +1,1 @@
+O **archivist** é uma biblioteca digital de arquivos e evidências desenvolvida para campanhas de RPG de mesa, especialmente aquelas focadas em investigação e mistério. Inspirado na estética de bibliotecas e arquivos históricos, o projeto permite organizar e compartilhar documentos, pistas e registros descobertos pelos jogadores ao longo de suas aventuras.

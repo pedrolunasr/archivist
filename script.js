@@ -5,17 +5,19 @@ const search = document.querySelector('#search');
 let archives = [];
 
 function renderArchives() {
-  const term = search.value.trim().toLocaleLowerCase('en');
+  const term = search.value.trim().toLocaleLowerCase();
   const filtered = archives.filter(archive =>
-    `${archive.title || ''}`.toLocaleLowerCase('en').includes(term)
+    `${archive.title || ''}`.toLocaleLowerCase().includes(term)
   );
   container.replaceChildren();
   countElement.textContent = `${archives.length} ${archives.length === 1 ? 'archive' : 'archives'}`;
   statusElement.textContent = filtered.length ? '' : (archives.length ? 'No archives match your search.' : 'No archives have been cataloged yet.');
 
   filtered.forEach((archive, index) => {
-    // Only local PDFs inside the archives directory are allowed.
-    if (typeof archive.file !== 'string' || !/^archives\/[\wÀ-ÿ .()-]+\.pdf$/i.test(archive.file)) return;
+    // verification of string for documents
+    if (
+      typeof archive.file !== 'string' ||
+      archive.file.trim() === '') return;
     const card = document.createElement('a');
     card.className = 'archive';
     card.href = encodeURI(archive.file);
